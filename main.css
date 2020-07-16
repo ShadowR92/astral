@@ -4,6 +4,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+    background: #E5E5E5;
 
 }
 
@@ -20,53 +21,234 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin: 0 0 10px;
 }
+
 .container {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 }
+
 .page {
     width: 100%;
     height: 100vh;
-    background: #fff;
 
 }
+
 /*Header*/
-.header {
-    padding: 15px 0;
 
-    margin: 40px 135px 0 135px;
-    background: #fff;
-}
-
-.contacts-link {
-    font-family: Manrope;
-    font-size: 20px;
-    color: #000;
+/*1*/
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
 
 }
 
-/*Content*/
+.header-text {
+    width: 721px;
+    height: 302px;
+}
 
-.content {
+.header-title {
     margin-top: 80px;
-    width: 713px;
-    height: 249px;
-}
 
-.content h1 {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 72px;
     color: #000;
     line-height: 83px;
+
 }
+
+.header-subtitle {
+    margin-top: 16px;
+
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+    line-height: 37px;
+}
+/*2й*/
+.header-phone-link {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000;
+    line-height: 26px;
+}
+
+
+.header-img {
+    margin-top: 80px;
+    z-index: 2;
+
+}
+
+.header-white {
+    position: absolute;
+    z-index: 7;
+}
+
+
+
+
+
+
+
+
+/*Header*/
+
+
+
+
+
 
 mark {
     background-color: #ECE341;
 }
+
+/*HOW*/
+
+.how {
+    width: 1170px;
+    height: 525px;
+}
+
+.how-title {
+    width: 870px;
+    height: 124px;
+    margin-bottom: 56px;
+}
+
+h2 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+}
+
+.paragraph {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    opacity: 0.65;
+}
+
+/*frames*/
+
+.how-frames {
+    margin-top: 32px;
+    margin-bottom: 140px;
+    display: flex;
+    width: 1170px;
+    height: 292px;
+    justify-content: space-between;
+}
+
+.how-frame h3 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    margin-top: 24px;
+}
+
+.how-frame p {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 4px;
+}
+
+/*WHY*/
+
+.why-title {
+    width: 870px;
+    height: 248px;
+    margin-bottom: 56px;
+}
+
+.why-frames {
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.why-frame {
+    margin-right: 134px;
+    margin-bottom: 56px;
+}
+
+.why-frame:nth-child(even) {
+    margin-right: 0;
+}
+
+
+.why-frame p {
+    display: inline-block;
+
+}
+
+/*Steps*/
+
+.steps {
+    margin-top: 84px;
+}
+
+
+.step-yellow {
+
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-top: 40px;
+
+}
+
+.step-yellow mark {
+    padding: 10px;
+}
+
+.step-title {
+    width: 670px;
+    height: 124px;
+    margin-top: 30px;
+}
+
+.step-1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.list {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 10px 0;
+}
+
+.ul {
+    list-style-type: circle;
+}
+
+
+
