@@ -19,6 +19,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 h2 {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
@@ -28,13 +29,10 @@ h2 {
 }
 
 .container {
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-
 
 
 }
+
 mark {
     background-color: #ECE341;
 }
@@ -51,6 +49,16 @@ mark {
     margin-bottom: 37px;
 
 
+}
+
+.header-up {
+    width: 100%;
+    max-width: 1170px;
+    z-index: 2;
+    margin: 40px 135px 0px 135px;
+
+
+    position: absolute;
 }
 
 .header-inner {
@@ -139,12 +147,7 @@ mark {
 
 
 
-
 /*============================HOW*/
-
-
-
-
 
 
 .how {
@@ -153,15 +156,16 @@ mark {
     height: 525px;
 
     margin: 37px 135px 140px 135px;
+
 }
 
 .how-title {
-    width: 870px;
+    width: 100%;
+    max-width: 870px;
     height: 124px;
 
-    margin: 0 435px 56px 0px;
+    margin: 0 435px 56px 0;
 }
-
 
 
 .paragraph {
@@ -177,7 +181,6 @@ mark {
 /*frames*/
 
 .how-frames {
-
     margin-top: 32px;
     margin-bottom: 140px;
     display: flex;
@@ -186,13 +189,17 @@ mark {
     justify-content: space-between;
 }
 
-.how-frame h3 {
+.how-frames-title {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 62px;
     margin-top: 24px;
+}
+.how-frames-text {
+    width: 100%;
+    max-width: 350px;
 }
 
 .how-frame p {
@@ -202,12 +209,13 @@ mark {
     font-size: 20px;
     line-height: 26px;
     margin-top: 4px;
+
 }
+
 
 /*WHY*/
 .why {
     width: 100%;
-
 
 
     max-width: 1072px;
@@ -343,7 +351,6 @@ mark {
 }
 
 
-
 li {
     margin: 8px 0 8px 20px;
 
@@ -359,7 +366,6 @@ li:last-child {
     display: inline-block;
     list-style-type: disc;
 }
-
 
 
 /*step-2*/
@@ -385,8 +391,7 @@ li:last-child {
 }
 
 
-
-.step-2-text{
+.step-2-text {
     width: 100%;
     max-width: 668px;
     height: 78px;
@@ -425,6 +430,7 @@ li:last-child {
 
     margin: 20px 135px 20px 55px;
 }
+
 /*step-5*/
 .step-5 {
     width: 100%;
@@ -470,7 +476,6 @@ li:last-child {
     background-color: #FBF7AD;
 
 
-
     margin: 0 auto 27px auto;
 
     position: relative;
@@ -505,11 +510,11 @@ li:last-child {
     margin: 47px 45px 47px 76px;
 }
 
-.attention p{
+.attention p {
     margin: 0;
 }
 
-.attention p:first-child{
+.attention p:first-child {
     margin-bottom: 16px;
 }
 
@@ -562,13 +567,14 @@ li:last-child {
 
     background: #ECE341;
 }
+
 /*Footer*/
 footer {
     width: 100%;
     max-width: 1170px;
     height: 176px;
     margin: 0 auto 74px auto;
-    
+
 }
 
 .footer-up {
@@ -653,5 +659,209 @@ footer {
 
     align-items: center;
     display: flex;
+
+}
+
+/* Media
+=================*/
+
+@media (max-width: 340px) {
+    *{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    h2 {
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .paragraph {
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 13px;
+        opacity: 0.65;
+    }
+
+
+
+    /*header*/
+
+    .header-right {
+        background-color: #E5E5E5;
+    }
+
+
+    .header {
+        margin-bottom: 500px;
+
+    }
+
+    .header-up {
+        margin-bottom: 500px;
+    }
+
+    .header-phone-link {
+        order: 1;
+    }
+
+    .header-left>a {
+        order: 2;
+    }
+
+
+
+    .header-text {
+        order: 3;
+    }
+
+    .header-img {
+        order: 4;
+    }
+
+    /*HOW*/
+    .how {
+        width: 100%;
+        max-width: 1170px;
+        height: 525px;
+
+        margin-bottom: 1064px;
+    }
+
+    .how-frames {
+        flex-wrap: wrap;
+        width: 10%;
+    }
+
+    .how-frames-title {
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 24px;
+    }
+    .how-frames-text {
+
+        width: 300px;
+    }
+    .how-title {
+        width: 100%;
+        max-width: 300px;
+        height: 93px;
+
+        margin-bottom: 40px;
+    }
+
+    .how-frame p {
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 4px;
+
+    }
+
+
+    /*WHY*/
+    .why {
+        margin-bottom: 1000px;
+    }
+
+    .why-frames {
+        flex-wrap: wrap;
+        width: 20%;
+    }
+
+
+    /*step*/
+    .step-1 {
+        flex-wrap: wrap;
+        margin-bottom: 500px;
+    }
+
+    .step-1-right {
+        order: 1;
+    }
+
+    .step-1-left {
+        order: 2;
+    }
+
+    /*STEP-2*/
+    .step-2 {
+        flex-wrap: wrap;
+        margin-bottom: 500px;
+    }
+
+
+    /*Step-3*/
+    .step-3 {
+        flex-wrap: wrap;
+        margin-bottom: 500px;
+
+    }
+
+    .step-3-right {
+        order: 1;
+    }
+
+    .step-3-left {
+        order: 2;
+    }
+
+
+    /*Step-4*/
+    .step-4 {
+
+        flex-wrap: wrap;
+        margin-bottom: 500px;
+    }
+
+
+    /*Step-5*/
+    .step-5 {
+        flex-wrap: wrap;
+        margin-bottom: 500px;
+    }
+
+    .step-5-right {
+        order: 1;
+    }
+
+    .step-5-left {
+        order: 2;
+    }
+
+    /*Step-6*/
+    .step-6 {
+
+        flex-wrap: wrap;
+        margin-bottom: 500px;
+    }
+
+    /*Step-7*/
+    .step-7 {
+
+        flex-wrap: wrap;
+        margin-bottom: 500px;
+    }
+
+    .step-7-right {
+        order: 1;
+    }
+
+    .step-7-left {
+        order: 2;
+    }
+
+    .step-7 {
+        margin-bottom: 1000px;
+    }
 
 }
